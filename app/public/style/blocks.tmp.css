@@ -22,8 +22,8 @@
 .examples__card-site{margin-bottom:30px}
 .examples__introduction{color:#218380}
 .header__bars{color:#fff;font-size:30px;cursor:pointer;display:none}@media only screen and (max-width:992px){.header__bars{display:block}}
-.header__btn{margin-top:50px;display:inline-block;z-index:3;positon:relative}
 .header__heart{color:red;font-size:40px}
+.header__btn{margin-top:50px;display:inline-block;z-index:3;positon:relative}
 .header__img{max-height:1000px;position:absolute;top:100px;z-index:0;display:block}@media only screen and (max-width:992px){.header__img{left:-50px;max-width:100%}}@media only screen and (max-width:768px){.header__img{top:200px}}@media only screen and (max-width:480px){.header__img{top:250px;max-width:100%}}@media only screen and (max-width:320px){.header__img{top:350px}}
 .header__subtitle{font-size:30px;font-weight:700;margin:0;padding-top:10px;z-index:3;positon:relative}@media only screen and (max-width:768px){.header__subtitle{font-size:20px}}
 .header__text{float:right;text-align:right;color:#fff;position:relative}@media only screen and (max-width:992px){.header__text{float:none;margin:auto;text-align:center}}
@@ -57,4 +57,15 @@
 .menu__cross-mobile_visible_true{display:block}
 .menu__item_mobile_true{display:block;width:100%;padding-left:0;padding-top:20px;padding-bottom:20px}.menu__item_mobile_true:hover{background:#FC7753}
 .menu__link_mobile_true{font-size:20px;font-weight:700}.menu__link_mobile_true:hover{border-bottom:none;color:#fff}
+.targets{background-color:#218380}
+.targets__introduction{padding-top:150px}
+.targets__inner{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-flow:wrap column;flex-flow:wrap column}
+
+
+.targets__title{color:#fff;text-transform:uppercase;font-size:25px}
+.targets__line{height:3px;background:#fff;max-width:200px}
+.targets__paragraph{color:#fff;max-width:500px}
+.targets__text_align_right{text-align:right}
+.targets__line_align_right{position:relative;left:300px}
+.targets__info{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-flow:wrap;flex-flow:wrap;padding-top:150px}
 /*# sourceMappingURL=blocks.tmp.css.map */
