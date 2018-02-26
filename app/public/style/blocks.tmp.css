@@ -10,7 +10,7 @@
 .menu{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-flow:wrap;flex-flow:wrap}
 .page{font-family:roboto-example,sans-serif;margin:0}
 .skills{background:url(../img/skills__bg.png) #73d2de;background-size:800px 170px}
-.spell{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:wrap row;flex-flow:wrap row;background:#fff;border-radius:20px;-webkit-box-shadow:1px 1px 1px 1px rgba(0,0,0,.5);box-shadow:1px 1px 1px 1px rgba(0,0,0,.5);positon:relative;width:100%;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:200px}
+.spell{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:wrap row;flex-flow:wrap row;background:#fff;border-radius:20px;-webkit-box-shadow:1px 1px 1px 1px rgba(0,0,0,.5);box-shadow:1px 1px 1px 1px rgba(0,0,0,.5);positon:relative;max-width:450px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:200px;padding-left:10px;padding-right:10px}@media only screen and (max-width:480px){.skill{height:100%}}
 .tech{background-color:rgba(36,41,72,.9)}
 .tool{text-align:center;color:#fff;border:4px solid #fff;border-radius:20px;width:270px;padding-top:20px;padding-bottom:20px;position:relative}.tool:hover .tool_overlay{display:block}
 .top-line{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-flow:wrap;flex-flow:wrap;padding-top:20px}
@@ -41,7 +41,7 @@
 .skills__introduction{padding-top:100px}
 .spell__img{max-height:80px;display:inline-block}
 .spell__line{height:3px;background:#fc7753;width:100%}
-.spell__right{padding-left:20px;width:70%}
+.spell__right{padding-left:20px;width:70%}@media only screen and (max-width:480px){.spell__right{width:50%}}
 .spell__text{max-width:300px;color:#8b8989}
 .spell__title{font-size:25px;margin:20px 0 5px}
 .tech__inner{position:relative;background:url(../img/tech__bg.png) center no-repeat #fff;background-size:cover;height:100%}
