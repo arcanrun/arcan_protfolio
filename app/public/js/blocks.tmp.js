@@ -75,7 +75,6 @@ win.resize(function(){
 
 
 
-
 $('.skills__inner').owlCarousel({
     loop:true,
     margin:10,
