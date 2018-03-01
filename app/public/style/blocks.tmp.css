@@ -51,7 +51,7 @@
 .header__bars{color:#fff;font-size:30px;cursor:pointer;display:none;position:fixed;right:20px;z-index:6;-webkit-transition:.2s;transition:.2s}.header__bars:hover{color:#fc7753}@media only screen and (max-width:992px){.header__bars{display:block}}
 .header__btn{margin-top:50px;display:inline-block;z-index:3;positon:relative}
 .header__heart{color:red;font-size:40px}
-.header__img{max-height:80%;max-width:100%;position:absolute;bottom:0;z-index:0}@media only screen and (max-width:768px){.header__img{right:20%}}
+.header__img{background:url(../img/header__img_min.png) bottom no-repeat;position:absolute;height:100%;width:100%}@media only screen and (max-width:992px){.header__img{background-size:100%}}
 .header__subtitle{font-size:30px;font-weight:700;margin:0;padding-top:10px;z-index:3;positon:relative}@media only screen and (max-width:768px){.header__subtitle{font-size:20px}}
 .header__text{float:right;text-align:right;color:#fff;position:relative}@media only screen and (max-width:992px){.header__text{float:none;margin:auto;text-align:center}}
 .header__title{font-size:60px;font-weight:700;margin:0;padding-top:70px}@media only screen and (max-width:768px){.header__title{font-size:40px}}
