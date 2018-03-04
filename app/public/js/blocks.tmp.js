@@ -25,24 +25,6 @@ $('.header__bars').on('click', function(){
 	$('.header__menu > .menu__item').addClass('menu__item_mobile_true');
 	$('.header__menu > .menu__item > .menu__link').addClass('menu__link_mobile_true');
 });
-$('.skills__inner').owlCarousel({
-    loop:true,
-    margin:10,
-    center: true,
-    autoWidth:true,
-    nav:false,
-    responsive:{
-        768:{
-            items:1
-        },
-        992:{
-            items:3
-        },
-        1000:{
-            items:5
-        }
-    }
-})
 // on resize
 	//function : if width add modidicator
 var win = $(window);
@@ -92,4 +74,22 @@ win.resize(function(){
 })
 
 
-});
+
+$('.skills__inner').owlCarousel({
+    loop:true,
+    margin:10,
+    center: true,
+    autoWidth:true,
+    nav:false,
+    responsive:{
+        768:{
+            items:1
+        },
+        992:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})});
