@@ -18,13 +18,6 @@ $('.hamburger').on('click', function(){
 	$('.hamburger > .hamburger__bar').toggleClass('hamburger__bar_active_true');
 	$('.menu-mobile').toggleClass('menu-mobile_visible_true');
 });
-$('.header__bars').on('click', function(){
-	var menu = $('.header__menu');
-	menu.addClass('header__menu_mobile_true');
-	menu.removeClass('header__menu_visible_none');
-	$('.header__menu > .menu__item').addClass('menu__item_mobile_true');
-	$('.header__menu > .menu__item > .menu__link').addClass('menu__link_mobile_true');
-});
 // on resize
 	//function : if width add modidicator
 var win = $(window);
@@ -75,6 +68,15 @@ win.resize(function(){
 
 
 
+$('.header__bars').on('click', function(){
+	var menu = $('.header__menu');
+	menu.addClass('header__menu_mobile_true');
+	menu.removeClass('header__menu_visible_none');
+	$('.header__menu > .menu__item').addClass('menu__item_mobile_true');
+	$('.header__menu > .menu__item > .menu__link').addClass('menu__link_mobile_true');
+});
+
+
 $('.menu__link, .menu-mobile__link').on('click', function(e){
 	e.preventDefault();
 
@@ -84,12 +86,28 @@ $('.menu__link, .menu-mobile__link').on('click', function(e){
 		}
 		
 	
-	var scrollTo = '#' + $(this).attr('href');
+	var scrollTo = $(this).attr('href');
+
 	console.log(scrollTo);
+
 	$('.parllax').animate({
 		scrollTop: $(scrollTo).offset().top
-	}, 1200);
+	}, 1200, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(scrollTo);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          }
+      }
+          );
+
 });
+
 
 
 $('.skills__inner').owlCarousel({
