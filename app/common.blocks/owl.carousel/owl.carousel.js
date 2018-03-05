@@ -13,4 +13,4 @@ $('.skill__inner').owlCarousel({
             items:5
         }
     }
-})
+});
