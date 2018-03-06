@@ -25,6 +25,19 @@ $(document).ready(function(){$('.about').waypoint(function() {
 );
 
 
+$('.header').waypoint(function() {
+  		console.log('waypoint:targets__inner:first-child');
+
+  	$('.header__text').addClass('animated bounceIn');
+  	 $('.header__img_1').addClass('animated bounceInLeft')
+
+  }, 
+    {
+   
+   context: document.getElementsByClassName('parllax') 
+	}
+);
+
 // $('.introduction').waypoint(function() {
 //   		console.log('waypoint');
 //       $('.introduction').addClass('animated fadeInUpBig');
@@ -90,6 +103,7 @@ $('.header__bars').on('click', function(){
 	$('.header__menu > .menu__item').addClass('menu__item_mobile_true');
 	$('.header__menu > .menu__item > .menu__link').addClass('menu__link_mobile_true');
 });
+setInterval(function(){$('.header__heart').toggleClass('animated pulse')}, 500)
 // on resize
 	//function : if width add modidicator
 var win = $(window);
@@ -142,39 +156,55 @@ win.resize(function(){
 
 
 
-$('.menu__link, .menu-mobile__link').on('click', function(e){
-	e.preventDefault();
+// $('.menu__link, .menu-mobile__link').on('click', function(e){
+// 	e.preventDefault();
 
-		if( $(this).attr('class') == 'menu-mobile__link' ){
+// 		if( $(this).attr('class') == 'menu-mobile__link' ){
+// 			$('.menu-mobile').toggleClass('menu-mobile_visible_true');
+// 			$('.hamburger > .hamburger__bar').toggleClass('hamburger__bar_active_true');
+// 		}
+		
+	
+// 	var scrollTo = $(this).attr('href');
+
+// 	console.log(scrollTo);
+
+// 	$('.parllax').animate({
+// 		scrollTop: $(scrollTo).offset().top
+// 	}, 1200, function() {
+//           // Callback after animation
+//           // Must change focus!
+//           var $target = $(scrollTo);
+//           $target.focus();
+//           if ($target.is(":focus")) { // Checking if the target was focused
+//             return false;
+//           } else {
+//             $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+//             $target.focus(); // Set focus again
+//           }
+//       }
+//           );
+
+// });
+
+
+  $('.menu__link, .menu-mobile__link, .footer__link').click( function(e) {
+  	e.preventDefault();
+  	if( $(this).attr('class') == 'menu-mobile__link' ){
 			$('.menu-mobile').toggleClass('menu-mobile_visible_true');
 			$('.hamburger > .hamburger__bar').toggleClass('hamburger__bar_active_true');
 		}
-		
-	
-	var scrollTo = $(this).attr('href');
 
-	console.log(scrollTo);
 
-	$('.parllax').animate({
-		scrollTop: $(scrollTo).offset().top
-	}, 1200, function() {
-          // Callback after animation
-          // Must change focus!
-          var $target = $(scrollTo);
-          $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-          } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-          }
+    $('.parllax').scrollTo(
+      $(this).attr("href"),
+      {
+        duration: 2000,
+        offset: {  }
       }
-          );
+    );
 
-});
-
-
-
+  });
 $('.skills__inner').owlCarousel({
     loop:true,
     margin:10,
@@ -262,18 +292,4 @@ $('.targets').waypoint(function() {
 
   }, { offset: '140%', context: document.getElementsByClassName('parllax') });
 
- 
-$('.header').waypoint(function() {
-  		console.log('waypoint:targets__inner:first-child');
-
-  	$('.header__text').addClass('animated bounceIn');
-  	 $('.header__img_1').addClass('animated bounceInLeft')
-
-  }, 
-    {
-   
-   context: document.getElementsByClassName('parllax') 
-	}
-);
-
-setInterval(function(){$('.header__heart').toggleClass('animated pulse')}, 500)});
+ });
