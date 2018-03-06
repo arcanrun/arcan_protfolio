@@ -1,4 +1,31 @@
-$(document).ready(function(){// $('.introduction').waypoint(function() {
+$(document).ready(function(){$('.about').waypoint(function() {
+  		console.log('waypoint:about');
+
+
+      $('.about__introduction').addClass('animated fadeInUp');
+
+     $('.about__img').css('animation-delay', '.3s').addClass('animated fadeInUp');
+     $('.about__title').css('animation-delay', '.5s').addClass('animated fadeInUp');
+
+
+      $('.about__container .about__info:nth-child(1)').css('animation-delay', '.5s').addClass('animated fadeInUp');
+      $('.about__container .about__info:nth-child(2)').css('animation-delay', '.7s').addClass('animated fadeInUp');
+      $('.about__container .about__info:nth-child(3)').css('animation-delay', '.9s').addClass('animated fadeInUp');
+      $('.about__container .about__info:nth-child(4)').css('animation-delay', '1.1s').addClass('animated fadeInUp');
+      $('.about__container .about__info:nth-child(5)').css('animation-delay', '1.3s').addClass('animated fadeInUp');
+       $('.about__container .about__info:nth-child(6)').css('animation-delay', '1.5s').addClass('animated fadeInUp');
+       $('.about__container .about__info:nth-child(7)').css('animation-delay', '1.7s').addClass('animated fadeInUp');
+      $('.about__contacts').css('animation-delay', '1.9s').addClass('animated fadeInUp');
+
+  }, 
+    {
+   offset: '10%', 
+   context: document.getElementsByClassName('parllax') 
+	}
+);
+
+
+// $('.introduction').waypoint(function() {
 //   		console.log('waypoint');
 //       $('.introduction').addClass('animated fadeInUpBig');
 //   }, { offset: '100%', context: document.getElementsByClassName('parllax') });
@@ -22,10 +49,33 @@ $('.skill__inner').owlCarousel({
  
   $('.tech__introduction').waypoint(function() {
   		console.log('waypoint');
-      $('.tech__introduction').addClass('animated fadeInUpBig');
+      $('.tech__introduction').addClass('animated fadeInUp');
   }, 
     {
    offset: '130%', 
+   context: document.getElementsByClassName('parllax') 
+	}
+);
+ $('.examples__card-site-block').waypoint(function() {
+  	  console.log('waypoint examples__card-site-block')
+
+      $('.examples__card-site-block .examples__card-site:nth-child(2)').css('animation-delay', '.2s');
+	  $('.examples__card-site-block .examples__card-site:nth-child(3)').css('animation-delay', '.3s');
+	  $('.examples__card-site-block .examples__card-site:nth-child(4)').css('animation-delay', '.4s');
+
+	  $('.examples__card-site').addClass('animated fadeInUp');
+      
+
+  }, { offset: '220%', context: document.getElementsByClassName('parllax') });
+
+ 
+ 
+  $('.examples__introduction').waypoint(function() {
+  		console.log('waypoint:examples__introduction');
+      $('.examples__introduction').addClass('animated fadeInUpBig ');
+  }, 
+    {
+   offset: '250%', 
    context: document.getElementsByClassName('parllax') 
 	}
 );
@@ -143,6 +193,61 @@ $('.skills__inner').owlCarousel({
         }
     }
 })
+  $('.skills').waypoint(function() {
+  		console.log('waypoint:skills__introduction');
+
+      $('.skills__introduction').addClass('animated fadeInUp');
+      $('.skills__inner').css('animation-delay', '.3s');
+      $('.skills__inner').addClass('animated fadeInLeft');
+
+  }, 
+    {
+   offset: '30%', 
+   context: document.getElementsByClassName('parllax') 
+	}
+);
+$('.targets').waypoint(function() {
+  		console.log('waypoint:targets__inner:first-child');
+
+  	$('.targets__inner .targets__info:first-child .targets__right').addClass('animated fadeInLeft');
+  	$('.targets__inner .targets__info:first-child .targets__left').addClass('animated fadeInRight');
+
+  	$('.targets__inner .targets__info:nth-child(2) .targets__right').css('animtaion-delay', '.5s').addClass('animated fadeInLeft');
+  	$('.targets__inner .targets__info:nth-child(2) .targets__left').css('animtaion-delay', '.5s').addClass('animated fadeInRight');
+     
+
+    $('.targets__inner .targets__info:nth-child(3) .targets__right').css('animtaion-delay', '.7s').addClass('animated fadeInLeft');
+  	$('.targets__inner .targets__info:nth-child(3) .targets__left').css('animtaion-delay', '.7s').addClass('animated fadeInRight');
+
+  }, 
+    {
+   
+   context: document.getElementsByClassName('parllax') 
+	}
+);
+
+
+
+
+
+
+
+
+
+  $('.targets').waypoint(function() {
+  		console.log('waypoint:targets');
+
+      $('.targets__introduction').addClass('animated fadeInUp');
+     
+
+  }, 
+    {
+   offset: '0%', 
+   context: document.getElementsByClassName('parllax') 
+	}
+);
+
+
  $('.tech__tool').waypoint(function() {
   		
 
@@ -150,21 +255,25 @@ $('.skills__inner').owlCarousel({
 	  $('.tech__tool_3').css('animation-delay', '.3s');
 	  $('.tech__tool_4').css('animation-delay', '.4s');
 
-	  $('.tech__tool_1').addClass('animated fadeInUpBig');
-      $('.tech__tool_2').addClass('animated fadeInUpBig');
-      $('.tech__tool_3').addClass('animated fadeInUpBig');
-      $('.tech__tool_4').addClass('animated fadeInUpBig');
+	  $('.tech__tool_1').addClass('animated fadeInUp');
+      $('.tech__tool_2').addClass('animated fadeInUp');
+      $('.tech__tool_3').addClass('animated fadeInUp');
+      $('.tech__tool_4').addClass('animated fadeInUp');
 
   }, { offset: '140%', context: document.getElementsByClassName('parllax') });
 
  
- 
-  $('.examples__introduction').waypoint(function() {
-  		console.log('waypoint:examples__introduction');
-      $('.examples__introduction').addClass('animated fadeInUpBig');
+$('.header').waypoint(function() {
+  		console.log('waypoint:targets__inner:first-child');
+
+  	$('.header__text').addClass('animated bounceIn');
+  	 $('.header__img_1').addClass('animated bounceInLeft')
+
   }, 
     {
-   offset: '250%', 
+   
    context: document.getElementsByClassName('parllax') 
 	}
-);});
+);
+
+setInterval(function(){$('.header__heart').toggleClass('animated pulse')}, 500)});

@@ -1,0 +1,1 @@
+setInterval(function(){$('.header__heart').toggleClass('animated pulse')}, 500)

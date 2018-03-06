@@ -1,7 +1,7 @@
  
   $('.examples__introduction').waypoint(function() {
   		console.log('waypoint:examples__introduction');
-      $('.examples__introduction').addClass('animated fadeInUpBig');
+      $('.examples__introduction').addClass('animated fadeInUpBig ');
   }, 
     {
    offset: '250%', 
