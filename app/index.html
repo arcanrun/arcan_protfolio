@@ -12,6 +12,18 @@
 	
 </head>
 <body class="page">
+	<div class="modal">
+		<span class="modal__back-btn"> <i class="fas fa-long-arrow-alt-left"></i></span>
+		<div class="modal__mail mail">
+			<form action="" class="mail__form">
+				<input type="text" class="mail__input mail__name" placeholder="Кто вы?">
+				<input type="text" class="mail__input mail__email" placeholder="Ваш email">
+				<textarea class="mail__input mail__message" name="" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
+				
+				<input class="mail__btn btn" type="submit" class="mail__submit">
+			</form>
+		</div>
+	</div>	
 	<!-- menu-mobile -->
 			<ul class="menu-mobile ">
 				<li class="menu-mobile__item"><a class="menu-mobile__link" href="#tech">ТЕХНОЛОГИИ</a></li>
@@ -64,7 +76,7 @@
 			<div class="header__text">
 				<h2 class="header__title">Привет!</h2>
 				<p class="header__subtitle">меня зовут Аркадий, и я <i class="header__heart fas fa-heart"></i> Frontend</p>
-				<a href="#" class="btn header__btn">написать мне</a>
+				<a href="#" class="btn header__btn modal__show_btn">написать мне</a>
 			</div>
 		</div>
 		<!-- end header__inner -->
@@ -83,7 +95,7 @@
 		</div>
 		<div class="tech__parllax_img_2  parllax__layer parllax__layer_foreup">
 			<img class="tech__img_2" src="img/tech_img_2.png" alt="">
-			<div class="tech__parllax_img_2_bg"></div>
+			<div class="tech__parllax_img_2_bg "></div>
 		</div>
 		<div class="tech__inner parllax__layer parllax__layer_foreupsuper container">
 
@@ -99,7 +111,7 @@
 
 				<div class="tool tech__tool tech__tool_1">
 					<div class="tool_overlay">
-						<p class="tool__text">Gulp some text text Gulp some text text Gulp some text text Gulp some text textv</p>
+						<p class="tool__text">Моя сборка <b> Gulp </b> для методолгии <b>БЭМ</b> <a class="tool__download" href="#"><i class=" fas fa-download"></i></a></p>
 					</div>
 					
 						<img class="tool__img" src="img/gulp.png" alt="">
@@ -109,7 +121,7 @@
 
 				<div class="tool tech__tool tech__tool_2">
 					<div class="tool_overlay">
-						<p class="tool__text">Gulp some text textGulp some text textGulp some text textGulp some text textGulp some text text</p>
+						<p class="tool__text"><b> Bootstrap 3 / Bootstrap 4</b></p>
 					</div>
 					<img class="tool__img" src="img/bootsrap.png" alt="">
 					<h2 class="tool__title">Bootsrap</h2>
@@ -117,7 +129,7 @@
 
 				<div class="tool tech__tool tech__tool_3">
 					<div class="tool_overlay">
-						<p class="tool__text">Gulp some text textGulp some text textGulp some text textGulp some text text</p>
+						<p class="tool__text">Препроцессор <b>SASS</b> и все его прелести. Также библиотеки Bourbon, Compass.</p>
 					</div>
 					<img class="tool__img" src="img/sass.png" alt="">
 					<h2 class="tool__title">Sass</h2>
@@ -125,7 +137,7 @@
 
 				<div class="tool tech__tool tech__tool_4">
 					<div class="tool_overlay">
-						<p class="tool__text">Gulp some text textGulp some text textGulp some text textGulp some text text</p>
+						<p class="tool__text">Старый доюрый <b>JQuery</b> для упрощения и скорости написания кода.</p>
 					</div>
 					<img class="tool__img" src="img/jquery.png" alt="">
 					<h2 class="tool__title">JQuery</h2>
@@ -318,9 +330,9 @@
 							<div class="targets__line targets__line_align_left"></div>
 								
 								<p class="targets__paragraph">
-									Создавать сложные SPA сайты, а также разрабатывать приложения для iOS, Android - одна из моих главных целей</p>
-								<p class="targets__paragraph"> Все это возможно благодаря одному из  лидирующих  js-фреймворков:  библиотеке React, и  React Native и Electron.</p>
-								<p class="targets__paragraph">-В ближайшее время освоить React!</p>
+									Второстепенная задача - освоить один или несколько языков программирования, ориентированных на серверную часть.</p>
+								<p class="targets__paragraph">Владея навыками в Python, также присматриваюсь к php, node.js</p>
+								<p class="targets__paragraph">-Углубиться в BackEnd</p>
 								
 						</div>
 					</div>
@@ -336,13 +348,13 @@
 					<div class="targets__right targets__right_order_reverse">
 						<div class="targets__text targets__text_align_right">
 
-							<h3 class="targets__title">react</h3>
+							<h3 class="targets__title">Работа в команде</h3>
 							<div class="targets__line targets__line_align_right"></div>
 								
 								<p class="targets__paragraph">
-									Создавать сложные SPA сайты, а также разрабатывать приложения для iOS, Android - одна из моих главных целей</p>
-								<p class="targets__paragraph"> Все это возможно благодаря одному из  лидирующих  js-фреймворков:  библиотеке React, и  React Native и Electron.</p>
-								<p class="targets__paragraph">-В ближайшее время освоить React!</p>
+									Разрабатывать интересные и сложные проекты вместе с командой профессионалов, набираться опыта и делиться знаниями с другими, а также просто общаться с братьями по духу! </p>
+								<p class="targets__paragraph">-Попасть в позитивный и мудрый коллектив разработчиков!</p>
+								
 								
 						</div>
 					</div>
@@ -368,8 +380,10 @@
 			<!-- about -->
 			<section id="about" class="about parllax__group">
 				<div class="about__bg-color parllax__layer parllax__layer_base"></div>
-				<div class="about__layout_2 parllax__layer parllax__layer_base"></div>	
-				<div class="about__layout_1 parllax__layer parllax__layer_fore"></div>	
+				<div class="about__layout_2 parllax__layer parllax__layer_fore">
+					<div class="about__layout_2_bg"></div>	
+				</div>	
+				<div class="about__layout_1 parllax__layer parllax__layer_base"></div>	
 					
 				<!-- intro -->
 				<div class="about__inner parllax__layer parllax__layer_foreup">	
@@ -388,7 +402,7 @@
 				</h3>
 				<div class="about__info">
 						<p class="about__paragraph">
-						Мне 24. Люблю движение, не могу сидеть на месте, поэтому постоянно развиваюсь во всех направлениях: занимаюсь спортом (бокс, ушу-саньда, паркур, катаюсь на лонгборде), а также web development'ом.
+						Мне 24. Люблю движение, не могу сидеть на месте, поэтому постоянно развиваюсь во всех направлениях: занимаюсь спортом (<b class="accent">бокс, ушу-саньда, паркур, катаюсь на лонгборде</b>), а также web development'ом.
 
 						</p>
 						<div class="about__line"></div>
@@ -397,21 +411,21 @@
 				<div class="about__info">
 						<p class="about__paragraph">
 							Люблю решать сложные задачи, использовать нестандартный подход.
-	В решении  ищу наиболее быстрое, качественное и легковесное решение.
+	В решении  ищу наиболее <b class="accent">быстрое, качественное и легковесное решение.</b>
 						</p>
 						<div class="about__line"></div>
 				</div>
 				
 					<div class="about__info">
 						<p class="about__paragraph">
-							Веб девелопмент и программировпние в целом для меня является творческим процессом,  поэтому при решении задач выкладываюсь наполную.
+							Веб девелопмент и программировпние в целом для меня является <b class="accent"><творческим процессом</b>,  поэтому при решении задач выкладываюсь наполную.
 						</p>
 						<div class="about__line"></div>
 				</div>
 
 					<div class="about__info">
 						<p class="about__paragraph">
-							*2012-2014 СПбГЭУ(ИНЖЭКОН ) Информатики и прикладной математики
+							<b class="accent">2012-2014 СПбГЭУ(ИНЖЭКОН )-</b> Информатики и прикладной математики
 Вычислительных систем и программирования, Информационная безопасность
 
 						</p>
@@ -421,7 +435,7 @@
 
 					<div class="about__info">
 						<p class="about__paragraph">
-							*2014-2018 ВКА им. А.Ф можайского - факультет специальных информационных систем, эксплуатация и применение автоматизированных систем управления
+							<b class="accent">2014-2018 ВКА им. А.Ф можайского</b> - факультет специальных информационных систем, эксплуатация и применение автоматизированных систем управления
 						</p>
 						<div class="about__line"></div>
 				</div>
@@ -457,7 +471,7 @@
 					<li class="menu__item footer__menu-item"><a class="menu__link footer__link" href="#skills">НАВЫКИ</a></li>
 					<li class="menu__item footer__menu-item"><a class="menu__link footer__link" href="#targets">ЦЕЛИ</a></li>
 					<li class="menu__item footer__menu-item"><a class="menu__link footer__link" href="#about">ОБО МНЕ</a></li>
-					<li class="menu__item footer__menu-item"><a class="menu__link footer__link footer__btn btn" href="#">написать мне</a></li>
+					<li class="menu__item footer__menu-item"><a class="menu__link footer__link footer__btn btn modal__show_btn'" href="">написать мне</a></li>
 
 				</ul>
 			

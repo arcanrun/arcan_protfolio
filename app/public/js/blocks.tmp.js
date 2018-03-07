@@ -79,16 +79,16 @@ $('.skill__inner').owlCarousel({
 	  $('.examples__card-site').addClass('animated fadeInUp');
       
 
-  }, { offset: '220%', context: document.getElementsByClassName('parllax') });
+  }, { offset: '1850px', context: document.getElementsByClassName('parllax') });
 
  
  
-  $('.examples__introduction').waypoint(function() {
+  $('.examples').waypoint(function() {
   		console.log('waypoint:examples__introduction');
       $('.examples__introduction').addClass('animated fadeInUpBig ');
   }, 
     {
-   offset: '250%', 
+   offset: '0%', 
    context: document.getElementsByClassName('parllax') 
 	}
 );
@@ -156,38 +156,6 @@ win.resize(function(){
 
 
 
-// $('.menu__link, .menu-mobile__link').on('click', function(e){
-// 	e.preventDefault();
-
-// 		if( $(this).attr('class') == 'menu-mobile__link' ){
-// 			$('.menu-mobile').toggleClass('menu-mobile_visible_true');
-// 			$('.hamburger > .hamburger__bar').toggleClass('hamburger__bar_active_true');
-// 		}
-		
-	
-// 	var scrollTo = $(this).attr('href');
-
-// 	console.log(scrollTo);
-
-// 	$('.parllax').animate({
-// 		scrollTop: $(scrollTo).offset().top
-// 	}, 1200, function() {
-//           // Callback after animation
-//           // Must change focus!
-//           var $target = $(scrollTo);
-//           $target.focus();
-//           if ($target.is(":focus")) { // Checking if the target was focused
-//             return false;
-//           } else {
-//             $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-//             $target.focus(); // Set focus again
-//           }
-//       }
-//           );
-
-// });
-
-
   $('.menu__link, .menu-mobile__link, .footer__link').click( function(e) {
   	e.preventDefault();
   	if( $(this).attr('class') == 'menu-mobile__link' ){
@@ -205,6 +173,14 @@ win.resize(function(){
     );
 
   });
+$('.modal__back-btn').on('click', function(){
+	$('.modal').removeClass('modal_active_true');
+});
+$('.modal__show_btn').on('click', function(e){
+	e.preventDefault();
+	$('.modal').addClass('modal_active_true');
+});
+
 $('.skills__inner').owlCarousel({
     loop:true,
     margin:10,

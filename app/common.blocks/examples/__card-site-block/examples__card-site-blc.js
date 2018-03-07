@@ -8,6 +8,6 @@
 	  $('.examples__card-site').addClass('animated fadeInUp');
       
 
-  }, { offset: '220%', context: document.getElementsByClassName('parllax') });
+  }, { offset: '1850px', context: document.getElementsByClassName('parllax') });
 
  
