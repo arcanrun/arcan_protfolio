@@ -15,12 +15,12 @@
 	<div class="modal">
 		<span class="modal__back-btn"> <i class="fas fa-long-arrow-alt-left"></i></span>
 		<div class="modal__mail mail">
-			<form action="" class="mail__form">
-				<input type="text" class="mail__input mail__name" placeholder="Кто вы?">
-				<input type="text" class="mail__input mail__email" placeholder="Ваш email">
-				<textarea class="mail__input mail__message" name="" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
+			<form action="https://formspree.io/arcan.run@gmail.com" method="post" class="mail__form">
+				<input type="text" class="mail__input mail__name" name="name" placeholder="Кто вы?">
+				<input type="text" class="mail__input mail__email" name="email" placeholder="Ваш email">
+				<textarea class="mail__input mail__message" name="message" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
 				
-				<input class="mail__btn btn" type="submit" class="mail__submit">
+				<input class="mail__btn btn" type="submit" class="mail__submit" name="submit">
 			</form>
 		</div>
 	</div>	
@@ -460,8 +460,8 @@
 		
 		
 		<footer id="footer" class="footer parllax__group">
-				
-				<div class="footer__inner container">
+				<div class="parllax__layer parllax__layer_fore">
+				<div class="footer__inner container ">
 					<div class="logo">
 						<img src="img/logo.png" alt="" class="logo__img footer__logo">
 					</div>
@@ -474,9 +474,10 @@
 					<li class="menu__item footer__menu-item"><a class="menu__link footer__link footer__btn btn modal__show_btn'" href="">написать мне</a></li>
 
 				</ul>
-			
+		
 				</div>
-				<h4 class="footer__subtitle">г. Санкт-Петербург 2018</h4>
+					<h4 class="footer__subtitle ">г. Санкт-Петербург 2018</h4>
+					</div>
 			</footer>
 			</div>
 			</div>
