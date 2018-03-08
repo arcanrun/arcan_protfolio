@@ -69,7 +69,7 @@ $('.skill__inner').owlCarousel({
    context: document.getElementsByClassName('parllax') 
 	}
 );
- $('.examples__card-site-block').waypoint(function() {
+ $('.examples').waypoint(function() {
   	  console.log('waypoint examples__card-site-block')
 
       $('.examples__card-site-block .examples__card-site:nth-child(2)').css('animation-delay', '.2s');
@@ -79,7 +79,7 @@ $('.skill__inner').owlCarousel({
 	  $('.examples__card-site').addClass('animated fadeInUp');
       
 
-  }, { offset: '1850px', context: document.getElementsByClassName('parllax') });
+  }, { offset: '20%', context: document.getElementsByClassName('parllax') });
 
  
  
@@ -88,7 +88,7 @@ $('.skill__inner').owlCarousel({
       $('.examples__introduction').addClass('animated fadeInUpBig ');
   }, 
     {
-   offset: '0%', 
+   offset: '20%', 
    context: document.getElementsByClassName('parllax') 
 	}
 );
@@ -96,7 +96,6 @@ $('.hamburger').on('click', function(){
 	$('.hamburger > .hamburger__bar').toggleClass('hamburger__bar_active_true');
 	$('.menu-mobile').toggleClass('menu-mobile_visible_true');
 });
-setInterval(function(){$('.header__heart').toggleClass('animated pulse')}, 500)
 $('.header__bars').on('click', function(){
 	var menu = $('.header__menu');
 	menu.addClass('header__menu_mobile_true');
@@ -104,6 +103,7 @@ $('.header__bars').on('click', function(){
 	$('.header__menu > .menu__item').addClass('menu__item_mobile_true');
 	$('.header__menu > .menu__item > .menu__link').addClass('menu__link_mobile_true');
 });
+setInterval(function(){$('.header__heart').toggleClass('animated pulse')}, 500)
 // on resize
 	//function : if width add modidicator
 var win = $(window);
@@ -173,11 +173,32 @@ win.resize(function(){
     );
 
   });
+$('.modal__back-btn').on('click', function(){
+	$('.modal').removeClass('modal_active_true');
+});
 $('.modal__show_btn').on('click', function(e){
 	e.preventDefault();
 	$('.modal').addClass('modal_active_true');
 });
 
+$('.skills__inner').owlCarousel({
+    loop:true,
+    margin:10,
+    center: true,
+    autoWidth:true,
+    nav:false,
+    responsive:{
+        768:{
+            items:1
+        },
+        992:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
   $('.skills').waypoint(function() {
   		console.log('waypoint:skills__introduction');
 
@@ -191,9 +212,6 @@ $('.modal__show_btn').on('click', function(e){
    context: document.getElementsByClassName('parllax') 
 	}
 );
-$('.modal__back-btn').on('click', function(){
-	$('.modal').removeClass('modal_active_true');
-});
 $('.targets').waypoint(function() {
   		console.log('waypoint:targets__inner:first-child');
 
@@ -250,22 +268,4 @@ $('.targets').waypoint(function() {
 
   }, { offset: '140%', context: document.getElementsByClassName('parllax') });
 
- 
-$('.skills__inner').owlCarousel({
-    loop:true,
-    margin:10,
-    center: true,
-    autoWidth:true,
-    nav:false,
-    responsive:{
-        768:{
-            items:1
-        },
-        992:{
-            items:3
-        },
-        1000:{
-            items:5
-        }
-    }
-})});
+ });

@@ -4,7 +4,7 @@
       $('.examples__introduction').addClass('animated fadeInUpBig ');
   }, 
     {
-   offset: '0%', 
+   offset: '20%', 
    context: document.getElementsByClassName('parllax') 
 	}
 );
