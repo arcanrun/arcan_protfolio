@@ -10,8 +10,11 @@
 	<link rel="stylesheet" href="style/libs.tmp.css" >
 	<link rel="stylesheet" href="style/blocks.tmp.css"> 
 	
+	
 </head>
 <body class="page">
+
+
 	<div class="modal">
 		<span class="modal__back-btn"> <i class="fas fa-long-arrow-alt-left"></i></span>
 		<div class="modal__mail mail">
@@ -20,7 +23,7 @@
 				<input type="text" class="mail__input mail__email" name="email" placeholder="Ваш email">
 				<textarea class="mail__input mail__message" name="message" id="" cols="30" rows="5" placeholder="Сообщение"></textarea>
 				
-				<input class="mail__btn btn" type="submit" class="mail__submit" name="submit">
+				<input class="mail__btn btn mail__submit" type="submit" name="submit" value="отправить">
 			</form>
 		</div>
 	</div>	
@@ -36,8 +39,10 @@
 					<span class="hamburger__bar"></span>
 			</div>
 			<!-- end menu-mobile -->
-	<div class="parllax">
-			
+					
+	
+	<div id="scroller" class="parllax">
+	
 	<!-- hedaer -->
 	<header id="header" class="header parllax__group">
 		<div class="header__bg-color parllax__layer parllax__layer_superdeep"></div>	
@@ -56,7 +61,7 @@
 			</div>
 			
 			<!-- menu -->
-			<ul class="menu header__menu animated fadeIn">
+			<ul class="menu header__menu">
 				<li class="menu__item"><a class="menu__link" href="#tech">ТЕХНОЛОГИИ</a></li>
 				<li class="menu__item"><a class="menu__link" href="#examples">ПРИМЕРЫ</a></li>
 				<li class="menu__item"><a class="menu__link" href="#skills">НАВЫКИ</a></li>
@@ -222,46 +227,112 @@
 			<div class="skills__inner owl-carousel" data-merge="1">
 				
 				<div class="spell ">
-					<img class="spell__img" src="img/spell__ps.png" alt="">
+					<img class="spell__img" src="img/python.png" alt="">
 					<div class="spell__right">
 						<h3 class="spell__title">
-							Photoshop
+							Python
 						</h3>
 						<div class="spell__line"></div>
 						<p class="spell__text">
-							Несомненно в каждый фронт енд разработчик использует photoshop
+							Программы на Python для решения различных задач
 						</p>
 					</div>
 				</div>
 
 
 				<div class="spell ">
-					<img class="spell__img" src="img/spell__ps.png" alt="">
+					<img class="spell__img" src="img/git.png" alt="">
 					<div class="spell__right">
 						<h3 class="spell__title">
-							Photoshop
+							Git
 						</h3>
 						<div class="spell__line"></div>
 						<p class="spell__text">
-							Несомненно в каждый фронт енд разработчик использует photoshop
+							Система управления версиями для поддержки и управления множеством проектов
 						</p>
 					</div>
 				</div>
 
 
 				<div class="spell ">
-					<img class="spell__img" src="img/spell__ps.png" alt="">
+					<img class="spell__img spell__img_size_s" src="img/mail.png" alt="">
 					<div class="spell__right">
 						<h3 class="spell__title">
-							Photoshop
+							Верстка e-mail
 						</h3>
 						<div class="spell__line"></div>
 						<p class="spell__text">
-							Несомненно в каждый фронт енд разработчик использует photoshop
+							Вёрстка электронных писем с помощью фреймворка Zurb Foundation
 						</p>
 					</div>
 				</div>
 
+				<div class="spell ">
+					<img class="spell__img" src="img/ubuntu.png" alt="">
+					<div class="spell__right">
+						<h3 class="spell__title">
+							Unix
+						</h3>
+						<div class="spell__line"></div>
+						<p class="spell__text">
+							В своей работе использую популярный дистрибутив Ubuntu
+						</p>
+					</div>
+				</div>
+
+				
+				<div class="spell ">
+					<img class="spell__img spell__img_size_s" src="img/responsive-design.png" alt="">
+					<div class="spell__right">
+						<h3 class="spell__title">
+							Responsive design
+						</h3>
+						<div class="spell__line"></div>
+						<p class="spell__text">
+							Современная верстка для любой платформы: desktop, tablet, mobile
+						</p>
+					</div>
+				</div>
+
+				<div class="spell ">
+					<img class="spell__img" src="img/photoshop.png" alt="">
+
+					<div class="spell__right">
+						<h3 class="spell__title">
+							Photoshop <a class="spell__link" href="https://drive.google.com/open?id=1Wr2FDRYur_hDMZh5zpxHwk-FpzUJPCdm"><i class=" fas fa-download"></i></a>
+						</h3>
+						<div class="spell__line"></div>
+						<p class="spell__text">
+							Создание дизайна сайта любой сложности
+						</p>
+					</div>
+				</div>
+			
+			<div class="spell ">
+					<img class="spell__img" src="img/wordpress.png" alt="">
+					<div class="spell__right">
+						<h3 class="spell__title">
+							WordPress
+						</h3>
+						<div class="spell__line"></div>
+						<p class="spell__text">
+							Посадка сайтов на одну из самых популярных Cms
+						</p>
+					</div>
+				</div>
+
+				<div class="spell ">
+					<img class="spell__img" src="img/js.png" alt="">
+					<div class="spell__right">
+						<h3 class="spell__title">
+							Js
+						</h3>
+						<div class="spell__line"></div>
+						<p class="spell__text">
+							Разработка интерактивных элементов с использованием JavaScript или JQuery
+						</p>
+					</div>
+				</div>
 
 			</div>
 			</div>
@@ -418,14 +489,14 @@
 				
 					<div class="about__info">
 						<p class="about__paragraph">
-							Веб девелопмент и программировпние в целом для меня является <b class="accent"><творческим процессом</b>,  поэтому при решении задач выкладываюсь наполную.
+							Веб девелопмент и программировпние в целом для меня является <b class="accent">творческим процессом</b>,  поэтому при решении задач выкладываюсь наполную.
 						</p>
 						<div class="about__line"></div>
 				</div>
 
 					<div class="about__info">
 						<p class="about__paragraph">
-							<b class="accent">2012-2014 СПбГЭУ(ИНЖЭКОН )-</b> Информатики и прикладной математики
+							<b class="accent">2012-2014 СПбГЭУ(ИНЖЭКОН )</b> - Информатики и прикладной математики
 Вычислительных систем и программирования, Информационная безопасность
 
 						</p>
@@ -480,9 +551,11 @@
 					</div>
 			</footer>
 			</div>
-			</div>
+			
 	<script src="js/libs.tmp.js"></script>
 	<script src="js/blocks.tmp.js"></script>
+
+
 	<!-- prodaction: <script src="js/scripts.js"></script>-->
 
 </body>

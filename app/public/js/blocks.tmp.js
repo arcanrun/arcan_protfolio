@@ -26,6 +26,11 @@ $(document).ready(function(){$('.about').waypoint(function() {
 
 
 
+// touchScroll('scroller')
+$('#scroller').kinetic({
+    x: false,
+    cursor: false
+});
 // $('.introduction').waypoint(function() {
 //   		console.log('waypoint');
 //       $('.introduction').addClass('animated fadeInUpBig');
@@ -34,6 +39,7 @@ $('.skill__inner').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
+    
     responsive:{
         0:{
             items:1
@@ -46,6 +52,15 @@ $('.skill__inner').owlCarousel({
         }
     }
 });
+
+// $('.skills__inner').on('mousewheel', '.owl-stage', function (e) {
+//     if (e.deltaY>0) {
+//         owl.trigger('next.owl');
+//     } else {
+//         owl.trigger('prev.owl');
+//     }
+//     e.preventDefault();
+// });
 
  
   $('.tech__introduction').waypoint(function() {
