@@ -31,18 +31,23 @@ function menuToMobileAndBack(){
 	}
 }
 
+// touchScroll('scroller')
+
+
+
 menuToMobileAndBack();	
+
+
 
 
 win.resize(function(){
 	
-	console.log('new' + $(this).width() + "   old" + width)
+	// console.log('new' + $(this).width() + "   old" + width)
 	if($(this).width() != width){
 		width = $(this).width();
 		menuToMobileAndBack();
 	}
-	
-	
+
 	
 })
 

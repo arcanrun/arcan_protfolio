@@ -26,11 +26,18 @@ $(document).ready(function(){$('.about').waypoint(function() {
 
 
 
-// touchScroll('scroller')
-$('#scroller').kinetic({
-    x: false,
-    cursor: false
-});
+function onTuch(){
+    if( device.mobile() || device.tablet() || device.ios() || device.ipad() || device.iphone() ||   device.ipod() || device.android()) {
+        $('#scroller').kinetic({
+        x: false,
+        cursor: false
+    });
+    } 
+}
+
+onTuch();
+
+
 // $('.introduction').waypoint(function() {
 //   		console.log('waypoint');
 //       $('.introduction').addClass('animated fadeInUpBig');
@@ -140,18 +147,23 @@ function menuToMobileAndBack(){
 	}
 }
 
+// touchScroll('scroller')
+
+
+
 menuToMobileAndBack();	
+
+
 
 
 win.resize(function(){
 	
-	console.log('new' + $(this).width() + "   old" + width)
+	// console.log('new' + $(this).width() + "   old" + width)
 	if($(this).width() != width){
 		width = $(this).width();
 		menuToMobileAndBack();
 	}
-	
-	
+
 	
 })
 
